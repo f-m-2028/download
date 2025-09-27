@@ -29,8 +29,8 @@ if (formQuest)
             alert('يعمريييي امواااحححح 💋');
             
             const link = document.createElement('a');
-            link.href = 'public/file/f.pdf';
-            link.download = 'f.pdf';
+            link.href = 'public/file/f.png';
+            link.download = 'f.png';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
@@ -44,5 +44,6 @@ if (formQuest)
 // ---------------------------------------------------------------- {{{ Functions }}} <<<
 
 // ==============================================>>> {{ Question }} <<<====================================
+
 
 
