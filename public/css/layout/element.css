@@ -1,0 +1,260 @@
+/* ==============================================>>> {{{ الأساس }}} <<<==================================== */
+/* ---------------------------------------------------------------- {{{ Title }}} <<<  */
+/*
+    Primary
+*/
+.logo
+{
+    color: var(--color-link-hover);
+
+
+    *
+    {
+        color: var(--color-link-hover);
+    }
+}
+.name, .price
+{
+    color: var(--color-primary);
+    font-size: var(--size-h6);
+    font-weight: var(--weight-h6);
+
+    white-space: nowrap;
+
+
+
+
+    *
+    {
+        color: var(--color-primary);
+
+        font-size: var(--size-h6);
+    }
+}
+.alert
+{
+    color: var(--color-white);
+    background: var(--color-red);
+
+    font-size: var(--size-h6);
+    font-weight: var(--weight-h6);
+
+    width: 100%;
+
+    justify-content: start;
+
+
+    *
+    {
+        color: var(--color-white);
+    }
+}
+.notification
+{
+    color: var(--color-white);
+    background: var(--color-link);
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+}
+.number
+{
+    font-family: "Poppins", sans-serif;
+}
+.discount
+{
+    color: var(--color-white) !important;
+    background: var(--color-red);
+
+    position: absolute;
+
+    z-index: var(--z-index-1);
+}
+
+
+
+/*
+    Secondary
+*/
+.logo
+{
+    font-size: 1.45rem;
+    font-weight: 600;
+
+
+
+    i
+    {
+        font-size: 2rem;
+    }
+    img
+    {
+        width: 8rem;
+    }
+}
+.price
+{
+    gap: var(--gap-tertiary);
+}
+.alert
+{
+    border-radius: var(--radius-primary);
+
+    padding: 0.7rem 1rem;
+
+    gap: var(--gap-tertiary);
+}
+.notification
+{
+    width: 1.5rem;
+    height: 1.5rem;
+
+    top: -0.8rem;
+    left: -0.8rem;
+}
+
+.discount
+{
+    border-radius: var(--radius-primary);
+
+    padding: 0.2rem 0.6rem;
+}
+
+
+
+/*
+    Hover
+*/
+@media (min-width: 768px)
+{
+    a:hover
+    {
+        .notification
+        {
+            color: var(--color-white);
+            background: var(--color-link-hover);
+        }
+    }
+}
+a.active
+{
+    .notification
+    {
+        color: var(--color-white);
+        background: var(--color-link-hover);
+    }
+}
+/* ---------------------------------------------------------------- {{{ Title }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Hr }}} <<<  */
+/*
+    Primary
+*/
+hr
+{
+    background: linear-gradient(90deg, var(--color-link-hover), var(--color-white), var(--color-link));
+}
+
+
+
+/*
+    Secondary
+*/
+hr
+{
+    border-radius: 2px;
+
+    width: 100%;
+    height: 3px;
+}
+/* ---------------------------------------------------------------- {{{ Hr }}} <<<  */
+/* ==============================================>>> {{{ الأساس }}} <<<==================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> {{{ الستايلات }}} <<<==================================== */
+/* ---------------------------------------------------------------- {{{ Button }}} <<<  */
+body.but-box
+{
+    button:not(#up).active
+    {
+        box-shadow: var(--box-shadow-big);
+        background: var(--color-link-hover);
+    }
+    button:not(#up).active:hover
+    {
+        box-shadow: unset;
+    }
+}
+/* ---------------------------------------------------------------- {{{ Button }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Alert }}} <<<  */
+/*
+    Primary
+*/
+.alert-red
+{
+    background: var(--color-red);
+}
+.alert-green
+{
+    background: var(--color-green);
+}
+.alert-blue
+{
+    background: var(--color-blue);
+}
+.alert-notification
+{
+    max-width: max-content;
+
+    position: fixed;
+    z-index: var(--z-index-5);
+}
+/* ---------------------------------------------------------------- {{{ Alert }}} <<<  */
+/* ==============================================>>> {{{ الستايلات }}} <<<==================================== */

@@ -1,0 +1,577 @@
+/* ==============================================>>> {{{ الأساس }}} <<<==================================== */
+/* ---------------------------------------------------------------- {{{ HTML, * }}} <<<  */
+/*
+    Primary
+*/
+
+@font-face 
+{
+  font-family: 'Tajawal';
+  src: url('/public/library/font.css') format('woff2');
+  font-display: swap;
+}
+html
+{
+    scrollbar-color: var(--color-link) transparent !important;
+    /* scrollbar-width: thin !important; */
+
+    scroll-behavior: smooth;
+
+    overflow-x: hidden;
+}
+*
+{
+    direction: var(--direction-1);
+
+    color: var(--color-text);
+    outline: none;
+    border: none;
+
+    font-family: var(--font-primary);
+    font-size: var(--size-p);
+    font-weight: var(--weight-p);
+    list-style: none;
+    text-decoration: none;
+
+    padding: 0;
+    margin: 0;
+
+    position: relative;
+
+    transition: var(--transition-1);
+    box-sizing: border-box;
+
+
+    del
+    {
+        color: var(--color-red) !important;
+        text-decoration: revert;
+    }
+}
+::after, ::before
+{
+    transition: var(--transition-1);
+}
+::placeholder
+{
+    opacity: 0.8;
+}
+
+
+/*
+    Secondary
+*/
+*
+{
+    line-height: 23px;
+}
+h1
+{
+    line-height: 40px;
+}
+/* ---------------------------------------------------------------- {{{ HTML, * }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ All }}} <<<  */
+/*
+    Primary
+*/
+body, header, footer, section, nav, article, aside, form, datalist, summary, div, button, h1, h2, h3, h4, h5, h6, p, a, i
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    gap: var(--gap-tertiary);
+}
+form.form-small, div, aside
+{
+    scrollbar-color: var(--color-link) transparent !important;
+    scrollbar-width: thin !important;
+
+
+    li
+    {
+        overflow-y: unset;
+    }
+}
+body
+{
+    background: var(--background-body);
+
+    width: 100vw;
+
+    flex-direction: column;
+    gap: unset;
+
+    overflow-x: hidden;
+}
+/* ---------------------------------------------------------------- {{{ All }}} <<<  */
+/* ==============================================>>> {{{ الأساس }}} <<<==================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> {{{ العنصر }}} <<<==================================== */
+/* ---------------------------------------------------------------- {{{ H..... }}} <<<  */
+/*
+    Primary
+*/
+h1, h2, h3, h4, h5, h6
+{
+    color: var(--color-primary);
+
+
+
+    *:not(i, a)
+    {
+        color: var(--color-primary);
+    }
+}
+h1, .h1
+{
+    font-size: var(--size-h1);
+    font-weight: var(--weight-h1);
+
+
+
+    *:not(i)
+    {
+        font-size: var(--size-h1);
+        font-weight: var(--weight-h1);
+    }
+}
+h2, .h2
+{
+    font-size: var(--size-h2);
+    font-weight: var(--weight-h2);
+
+
+
+    *:not(i)
+    {
+        font-size: var(--size-h2);
+        font-weight: var(--weight-h2);
+    }
+}
+h3, .h3
+{
+    font-size: var(--size-h3);
+    font-weight: var(--weight-h3);
+
+
+
+    *:not(i)
+    {
+        font-size: var(--size-h3);
+        font-weight: var(--weight-h3);
+    }
+}
+h4, .h4
+{
+    font-size: var(--size-h4);
+    font-weight: var(--weight-h4);
+
+
+
+    *:not(i)
+    {
+        font-size: var(--size-h4);
+        font-weight: var(--weight-h4);
+    }
+}
+h5, .h5
+{
+    font-size: var(--size-h5);
+    font-weight: var(--weight-h5);
+
+
+
+    *:not(i)
+    {
+        font-size: var(--size-h5);
+        font-weight: var(--weight-h5);
+    }
+}
+h6, .h6
+{
+    font-size: var(--size-h6);
+    font-weight: var(--weight-h6);
+
+
+
+    *:not(i)
+    {
+        font-size: var(--size-h6);
+        font-weight: var(--weight-h6);
+    }
+}
+p
+{
+    align-items: start;
+}
+a, .a
+{
+    color: var(--color-link);
+    border-color: var(--color-link) !important;
+
+    cursor: pointer;
+
+
+
+    *
+    {
+        color: var(--color-link);
+    }
+}
+strong
+{
+    color: var(--color-primary) !important;
+    -webkit-text-stroke: unset !important;
+
+    font-weight: bold;
+}
+div:has(> strong)
+{
+    align-items: start;
+}
+
+
+
+
+/*
+    Secondary
+*/
+section > h1
+{
+    width: 100%;
+    height: max-content !important;
+
+    align-items: start;
+}
+a, .a, p
+{
+    gap: var(--gap-tertiary);
+}
+i
+{
+    font-size: 1.5rem;
+}
+
+
+
+/*
+    Hover
+*/
+a:not(.logo).active, .a.active
+{
+    color: var(--color-link-hover);
+    border-color: var(--color-link-hover) !important;
+
+
+    *
+    {
+        color: var(--color-link-hover);
+        stroke: var(--color-link-hover);
+    }
+}
+a:not(.logo):hover, .a:hover
+{
+    @media (min-width: 768px)
+    {
+        color: var(--color-link-hover);
+        border-color: var(--color-link-hover) !important;
+
+
+        *
+        {
+            color: var(--color-link-hover);
+            stroke: var(--color-link-hover);
+        }
+    }
+}
+/* ---------------------------------------------------------------- {{{ H..... }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ ~H~ }}} <<<  */
+/*
+    Primary
+*/
+i
+{
+    display: flex !important;
+}
+iframe
+{
+    width: 100%;
+    height: -webkit-fill-available;
+}
+img
+{
+    width: 100%;
+}
+
+
+
+/*
+    Secondary
+*/
+i
+{
+    font-size: 1.7rem;
+}
+iframe
+{
+    box-shadow: var(--box-shadow-small);
+    border-radius: var(--radius-primary);
+}
+/* ---------------------------------------------------------------- {{{ ~H~ }}} <<<  */
+/* ==============================================>>> {{{ العنصر }}} <<<==================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> {{{ المجموعة }}} <<<==================================== */
+/* ---------------------------------------------------------------- {{{ Aside }}} <<<  */
+/*
+    Primary
+*/
+aside
+{
+    background: var(--background-header);
+
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    overflow-y: auto;
+
+
+    a, li
+    {
+        font-size: var(--size-h6);
+        font-weight: var(--weight-h6);
+        text-transform: capitalize;
+
+        width: 100%;
+        height: max-content;
+
+        justify-content: start;
+    }
+}
+article
+{
+    background: var(--background-body);
+
+    width: -webkit-fill-available;
+
+    flex-direction: column;
+
+
+
+    header
+    {
+        position: relative !important;
+    }
+}
+
+
+
+/*
+    Secondary
+*/
+aside
+{
+    padding: 1rem;
+
+    gap: var(--gap-tertiary);
+
+
+
+    a:not(.logo), li
+    {
+        border-radius: var(--radius-primary);
+        border-right: 3px solid transparent !important;
+
+        padding: 1rem;
+    }
+}
+article
+{
+    gap: var(--gap-primary);
+
+
+
+    header, section
+    {
+        box-shadow: var(--box-shadow-big);
+    }
+}
+
+
+
+/*
+    Hover
+*/
+aside
+{
+    @media (min-width: 768px)
+    {
+        a:not(.logo):hover, li:hover
+        {
+            color: var(--color-white) !important;
+            background: var(--color-link-hover);
+            border-right-color: var(--color-white) !important;
+
+
+
+            *
+            {
+                color: var(--color-white) !important;
+            }
+        }
+    }
+    a:not(.logo).active, li.active
+    {
+        color: var(--color-white) !important;
+        background: var(--color-link-hover);
+        border-right-color: var(--color-white) !important;
+
+
+
+        *
+        {
+            color: var(--color-white) !important;
+        }
+    }
+}
+/* ---------------------------------------------------------------- {{{ Aside }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Ul }}} <<<  */
+/*
+    Primary
+*/
+div:has(> ul)
+{
+    flex-direction: column;
+    align-items: start;
+
+
+
+    > p
+    {
+        color: var(--color-primary);
+        font-size: var(--size-h6);
+        font-weight: var(--weight-h6);
+
+        *
+        {
+            color: var(--color-primary);
+            font-size: var(--size-h6);
+            font-weight: var(--weight-h6);
+        }
+    }
+    li
+    {
+        list-style: disc;
+    }
+}
+
+
+
+/*
+    Secondary
+*/
+div:has(> ul)
+{
+    gap: var(--gap-tertiary);
+
+
+    p
+    {
+        margin-top: var(--gap-secondary);
+    }
+    p:first-child
+    {
+        margin-top: unset;
+    }
+    li
+    {
+        margin-right: 2rem;
+    }
+}
+/* ---------------------------------------------------------------- {{{ Ul }}} <<<  */
+/* ==============================================>>> {{{ المجموعة }}} <<<==================================== */
