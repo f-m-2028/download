@@ -154,6 +154,7 @@ body
 button:not(form button)
 {
     transform: translateY(0px) rotateY(0deg);
+    transition: var(--transition-2);
 }
 
 button:not(form button):hover
