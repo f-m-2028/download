@@ -14,8 +14,12 @@ const formQuest = document.getElementById('formQuest');
 // ---------------------------------------------------------------- {{{ Functions }}} <<<
 if (formQuest) 
 {
-    formQuest.addEventListener('submit', function () 
+    formQuest.addEventListener('submit', function (e) 
     {
+        e.preventDefault();
+
+
+        
         const val = document.getElementById('heartInput').value.trim();
 
 
@@ -34,3 +38,4 @@ if (formQuest)
 // ---------------------------------------------------------------- {{{ Functions }}} <<<
 
 // ==============================================>>> {{ Question }} <<<====================================
+
