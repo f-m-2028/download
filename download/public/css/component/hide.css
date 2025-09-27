@@ -1,0 +1,65 @@
+/* ==============================================>>> {{{ الأساس }}} <<<==================================== */
+/* ---------------------------------------------------------------- {{{ Panel عادي }}} <<<  */
+/*
+    Primary
+*/
+.section-hide
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+    z-index: var(--z-index-5);
+
+
+
+    .container
+    {
+        justify-content: center;
+    }
+}
+
+
+
+/*
+    Secondary
+*/
+.section-hide
+{
+    background: var(--background-hide);
+
+
+
+    form
+    {
+        background: var(--background-header);
+
+
+
+        #hideClose
+        {
+            position: absolute;
+            top: 1.2rem;
+            left: 2rem;
+
+            font-size: 1.7rem;
+        }
+    }
+}
+
+
+
+/*
+    Hover
+*/
+.section-hide.active
+{
+    
+}
+/* ---------------------------------------------------------------- {{{ Panel عادي }}} <<<  */
+/* ==============================================>>> {{{ الأساس }}} <<<==================================== */
