@@ -1,0 +1,541 @@
+/* ==============================================>>> {{{ الأساس }}} <<<==================================== */
+/* ---------------------------------------------------------------- {{{ Display }}} <<<  */
+/*
+    Primary
+*/
+.none-2000
+{
+    display: var(--none-2000) !important;
+}
+.none-2000-1280
+{
+    display: var(--none-2000-1280) !important;
+}
+.none-1280-768
+{
+    display: var(--none-1280-768) !important;
+}
+.none-768
+{
+    display: var(--none-768) !important;
+}
+/* ---------------------------------------------------------------- {{{ Display }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Styles }}} <<<  */
+/*
+    Primary
+*/
+.glass
+{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+/* ---------------------------------------------------------------- {{{ Styles }}} <<<  */
+/* ==============================================>>> {{{ الأساس }}} <<<==================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> {{{ الأنمشن }}} <<<==================================== */
+/* ---------------------------------------------------------------- {{{ On Scroll }}} <<<  */
+/*
+    Primary
+*/
+.bbody
+{
+   footer, .container, .content:has(p, h6, input), .box-shadow, .card, .name, p
+    {
+        opacity: 0 !important;
+        transition: var(--transition-3);
+    }
+    .container, .content:has(p, h6, input), .box-shadow, .card, .name, p
+    {
+        transform: translateY(80px) !important;
+    }
+
+    .section-contact
+    {
+        .box-shadow:first-child
+        {
+            transform: translateX(-50%) !important;
+        }
+        .box-shadow:last-child
+        {
+            transform: translateX(50%) !important;
+        }
+    } 
+}
+body
+{
+    .box
+    {
+        opacity: 0 !important;
+        transform: translateY(12rem) !important;
+        transition: var(--transition-3);
+    }
+}
+
+
+
+
+
+
+/*
+    Hover
+*/
+.bbody
+{
+    footer.active, .container.active, .content.active, .box-shadow.active, .card.active, .name.active, p.active
+    {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    .box-shadow:first-child.active, .box-shadow:last-child.active
+    {
+        transform: translateX(0) !important;
+    }
+}
+body
+{
+    .box.active
+    {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+}
+/* ---------------------------------------------------------------- {{{ On Scroll }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ تحريك }}} <<<  */
+/*
+    Transform
+*/
+button:not(form button)
+{
+    transform: translateY(0px) rotateY(0deg);
+}
+
+button:not(form button):hover
+{
+    transform: translateY(-5px) rotateY(360deg);
+    transform-style: preserve-3d;
+}
+/* ---------------------------------------------------------------- {{{ تحريك }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ تكبير }}} <<<  */
+/*
+    Zoom
+*/
+.section-hide
+{
+    scale: 0;
+    opacity: 0;
+    transition: var(--transition-2);
+}
+.section-hide.active
+{
+    scale: 1;
+    opacity: 1;
+}
+
+
+
+/*
+    Scale
+*/
+.card:hover
+{
+    scale: 1.03 !important;
+}
+/* ---------------------------------------------------------------- {{{ تكبير }}} <<<  */
+/* ==============================================>>> {{{ الأنمشن }}} <<<==================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> {{{ الأفتر }}} <<<==================================== */
+/* ---------------------------------------------------------------- {{{ Curve }}} <<<  */
+/*
+    Primary
+*/
+.curve
+{
+    content: "";
+    color: var(--color-white) !important;
+    background: var(--color-primary);
+
+
+    *
+    {
+        color: var(--color-white) !important;
+    }
+}
+.curve::before
+{
+    content: "";
+
+    background: var(--color-white);
+
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: var(--z-index-1);
+}
+
+
+
+/*
+    Secondary
+*/
+.curve
+{
+    padding: 0.2rem 0.4rem 0.2rem 1rem;
+
+
+    
+    i
+    {
+        font-size: 1.6rem;
+    }
+}
+.curve::before
+{
+    border-left: 12px solid transparent;
+    border-bottom: 12px solid rgb(136, 95, 95);
+}
+/* ---------------------------------------------------------------- {{{ Curve }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Line Move }}} <<<  */
+/*
+    Primary
+*/
+.card, #formWhatsapp
+{
+    z-index: var(--z-index-1) !important;
+    overflow: hidden;
+}
+.card::before, #formWhatsapp::before
+{
+    content: "";
+    background: var(--color-primary);
+
+    width: 20%;
+    height: 300%;
+
+    position: absolute;
+    top: -100%;
+    /* right: 50%; */
+
+    z-index: var(--z-index--1);
+
+
+    animation: border 6s linear infinite;
+}
+.card::after, #formWhatsapp::after
+{
+    content: "";
+    background: var(--background-body);
+
+    position: absolute;
+    z-index: var(--z-index--1);
+    inset: 0.2rem;
+}
+@keyframes border
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.card:hover::before , #formWhatsapp:hover::before
+{
+    animation-play-state: paused;
+}
+/* ---------------------------------------------------------------- {{{ Line Move }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Line }}} <<<  */
+/*
+    Primary
+*/
+.line-after::after, h1::after, h2::after
+{
+    content: "";
+    background: var(--color-link-hover);
+
+    height: 2px;
+    width: 0;
+
+    position: absolute;
+    right: 0;
+    bottom: -0.16rem;
+}
+
+.progress
+{
+    content: "";
+    background: var(--background-footer);
+
+    height: 3px;
+    width: 100%;
+}
+.progress::after
+{
+    content: "";
+    background: var(--color-primary);
+
+    height: 3px;
+    width: 0;
+}
+
+
+
+/*
+    Hover
+*/
+.line-after.active::after, h1::after, h2::after
+{
+    width: 65%;
+}
+@media (min-width: 768px)
+{
+    .line-after:hover::after, h2::after
+    {
+        width: 50%;
+    }
+}
+
+
+.progress-1.active::after
+{
+    width: 100%;
+}
+.progress-2.active::after
+{
+    width: 95%;
+}
+.progress-3.active::after
+{
+    width: 75%;
+}
+.progress-4.active::after
+{
+    width: 80%;
+}
+.progress-5.active::after
+{
+    width: 80%;
+}
+/* ---------------------------------------------------------------- {{{ Line }}} <<<  */
+/* ==============================================>>> {{{ الأفتر }}} <<<==================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> {{{ الستايل }}} <<<==================================== */
+/* ---------------------------------------------------------------- {{{ ألوان }}} <<<  */
+/*
+    Linear
+*/
+/* .card
+{
+    background: var(--background-body) !important;
+}
+form button 
+{
+    background: linear-gradient(45deg, var(--color-primary), transparent, var(--color-link-hover)) !important;
+}
+form button, .card
+{
+    background-size: 200% auto !important;
+    transition: var(--transition-2) !important;
+}
+
+form button:hover, .card:hover
+{
+    background-position: right center !important;
+} */
+
+
+
+/*
+    Linear
+*/
+/* .card:hover
+{
+    box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.3) !important;
+} */
+
+
+
+/*
+    إضاءة
+*/
+.button-primary-1:hover 
+{
+    color: var(--color-white) !important;
+    background: var(--color-link-hover) !important;
+    border-color: var(--color-link-hover) !important;
+    text-shadow: 0 0 5px var(--color-white), 0 0 10px var(--color-white), 0 0 20px var(--color-white) !important;
+    box-shadow: 0 0 5px var(--color-link-hover), 0 0 10px var(--color-link-hover), 0 0 40px var(--color-link-hover), 0 0 100px var(--color-link-hover) !important;
+}
+/* ---------------------------------------------------------------- {{{ ألوان }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Text }}} <<<  */
+/*
+    Text Stroke
+*/
+/* h1, h2, .card .name, h3
+{
+    color: transparent !important;
+    -webkit-text-stroke: 1px var(--color-link-hover) !important;
+
+    font-weight: bold !important;
+} */
+
+
+
+/*
+    Linear Gradient
+*/
+/* h1, .name, h3
+{
+    color: transparent;
+    background: linear-gradient(45deg, var(--color-primary), var(--color-link-hover));
+    background-clip: text;
+    background-size: 200% auto;
+    transition: background-position var(--transition-3);
+    background-position: right center;
+} */
+/* ---------------------------------------------------------------- {{{ Text }}} <<<  */
+/* ==============================================>>> {{{ الستايل }}} <<<==================================== */
