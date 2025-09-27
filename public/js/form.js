@@ -27,8 +27,14 @@ if (formQuest)
         if (val === '💋') 
         {
             alert('يعمريييي امواااحححح 💋');
-            window.location.href = 'public/file/f.pdf';
-        } 
+            
+            const link = document.createElement('a');
+            link.href = 'public/file/f.pdf';
+            link.download = 'f.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
         else 
         {
             alert('متبوسي يبت...');
@@ -38,4 +44,5 @@ if (formQuest)
 // ---------------------------------------------------------------- {{{ Functions }}} <<<
 
 // ==============================================>>> {{ Question }} <<<====================================
+
 
