@@ -23,7 +23,7 @@ if (formQuest)
         if (val === '💋') 
         {
             alert('يعمريييي امواااحححح 💋');
-            window.location.href = 'public/file/';
+            window.location.href = 'public/file/f.pdf';
         } 
         else 
         {
@@ -32,4 +32,5 @@ if (formQuest)
     });
 }
 // ---------------------------------------------------------------- {{{ Functions }}} <<<
+
 // ==============================================>>> {{ Question }} <<<====================================
